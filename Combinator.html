@@ -1,0 +1,114 @@
+
+             <!--Descendent selector-->
+
+
+             <!--position fixed paragraph for top left bottom up
+            in image display cricket players name-->
+
+<!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                 body {
+                        margin: 0;
+                        padding: 0;
+                    }
+            
+                    #fixed-paragraph {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        background-color: pink;
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                    }
+            
+                    /* Add some extra styles for demonstration purposes */
+                    #content {
+                        height: 2000px;
+                        padding: 20px;
+                    }
+                </style>
+    </head>
+            <body>
+                <div id="fixed-paragraph">
+                    <p>Amruta G</p>
+                </div>
+            
+                <div id="content">
+                    <p>            Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <!-- Add more content here to test scrolling -->
+                </div>
+        </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .logo-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .logo {
+            width: 600px;
+            height: 600px;
+            background-image: url('csk.webp');
+            background-size: cover;
+        }
+
+        .cricketers {
+            position: absolute;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .top-cricketers {
+            top: 10px;
+            left: 0;
+            right: 0;
+        }
+
+        .bottom-cricketers {
+            bottom: 10px;
+            left: 0;
+            right: 0;
+        }
+
+        .left-cricketers {
+            top: 50%;
+            left: 10px;
+            transform: translate(0, -50%);
+        }
+
+        .right-cricketers {
+            top: 50%;
+            right: 10px;
+            transform: translate(0, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="logo">
+            <div class="cricketers top-cricketers">
+                <p>MS Dhoni</p>
+                <p>Suresh Raina</p>
+            </div>
+            <div class="cricketers bottom-cricketers">
+                <p>Ravindra Jadeja</p>
+                <p>Dwayne Bravo</p>
+            </div>
+            <div class="cricketers left-cricketers">
+                <p>Shane Watson</p>
+            </div>
+            <div class="cricketers right-cricketers">
+                <p>Faf du Plessis</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
